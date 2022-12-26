@@ -12,8 +12,11 @@
     align-items: center;
   }
 
+  &__menu {
+    margin: 0 auto;
+  }
+
   &__nots {
     margin-right: 30px;
-    margin-left: auto;
   }
 }
