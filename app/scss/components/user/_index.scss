@@ -1,20 +1,21 @@
 .user {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   cursor: pointer;
 
   &_dropdown {
     position: relative;
 
-    padding-right: 26px;
+    padding-right: 40px;
 
     &::after {
       content: "";
 
       position: absolute;
       top: 50%;
-      right: 22px;
+      right: 20px;
       transform: translateY(-50%);
 
       width: 16px;
@@ -26,4 +27,14 @@
       background-size: cover;
     }
   }
+
+  &__name {
+    margin-right: 10px;
+  }
+
+  &__avatar {
+    max-width: 47px;
+  }
 }
+
+@import "media";

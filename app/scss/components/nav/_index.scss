@@ -8,4 +8,24 @@
 
     white-space: nowrap;
   }
+
+  &__btn {
+    width: 24px;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: none;
+  }
+
+  &__line {
+    display: block;
+    width: 24px;
+    height: 3px;
+
+    background: $color-gray;
+  }
 }
