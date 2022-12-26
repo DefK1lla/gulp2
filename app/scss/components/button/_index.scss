@@ -1,0 +1,43 @@
+.btn {
+  padding: 9px 18px;
+
+  font-family: inherit;
+  font-size: inherit;
+  color: $color-light;
+
+  border-radius: $border-radius;
+  background: $color-primary;
+  border: $border;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary;
+    background: transparent;
+  }
+
+  &_warning {
+    color: $color-light;
+
+    border-color: transparent;
+    background: $color-warning;
+
+    &:hover {
+      color: $color-warning;
+
+      background: none;
+      border-color: $color-warning;
+    }
+  }
+
+  &_secondary {
+    color: $color-primary;
+
+    background: transparent;
+    border: $border;
+
+    &:hover {
+      color: $color-light;
+      background: $color-primary;
+    }
+  }
+}
