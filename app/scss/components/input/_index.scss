@@ -1,0 +1,18 @@
+.input {
+  padding: 7px 14px;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  border-radius: $border-radius;
+  border: $border;
+  outline: none;
+
+  &_fullwidth {
+    width: 100%;
+  }
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
