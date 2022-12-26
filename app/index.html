@@ -66,61 +66,88 @@
         </div>
       </div>
     </header>
-    <div class="wrapp">
+    <div class="page">
       <aside class="sidebar">
-        <div class="sidebar__wrapper">
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/Account circle.svg" alt=""></div>
-            <div class="sidebar-row__title">Мой профиль</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/colocol.svg" alt=""></div>
-            <div class="sidebar-row__title">Центр уведомлений</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/monitore.svg" alt=""></div>
-            <div class="sidebar-row__title">Управление курсами</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/lider.svg" alt=""></div>
-            <div class="sidebar-row__title">Олимпиады</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/book.svg" alt=""></div>
-            <div class="sidebar-row__title">Управление тестами</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/shop.svg" alt=""></div>
-            <div class="sidebar-row__title">Каталог товаров</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/catalog.svg" alt=""></div>
-            <div class="sidebar-row__title">Каталог достижений</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/chat.svg" alt=""></div>
-            <div class="sidebar-row__title">Чаты</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/news.svg" alt=""></div>
-            <div class="sidebar-row__title">Новости</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/help.svg" alt=""></div>
-            <div class="sidebar-row__title">Помощь</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/note.svg" alt=""></div>
-            <div class="sidebar-row__title">На модерации</div>
-          </div>
-          <div class="sidebar-row">
-            <div class="sidebar-row__icon"><img src="assets/icons/monic.svg" alt=""></div>
-            <div class="sidebar-row__title">Управление пользователями</div>
-          </div>
-          
-        </div>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div><img class="sidebar__icon" src="assets/icons/Account circle.svg" alt=""></div>
+              <div class="sidebar__title">Мой профиль</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/colocol.svg" alt=""></div>
+              <div class="sidebar__title">Центр уведомлений</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/monitore.svg" alt=""></div>
+              <div class="sidebar__title">Управление курсами</div>
+            </a>
+          </li>
+          <li class="sidebar__item sidebar__item_active">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/lider.svg" alt=""></div>
+              <div class="sidebar__title">Олимпиады</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/book.svg" alt=""></div>
+              <div class="sidebar__title">Управление тестами</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/shop.svg" alt=""></div>
+              <div class="sidebar__title">Каталог товаров</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/catalog.svg" alt=""></div>
+              <div class="sidebar__title">Каталог достижений</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/chat.svg" alt=""></div>
+              <div class="sidebar__title">Чаты</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/news.svg" alt=""></div>
+              <div class="sidebar__title">Новости</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/help.svg" alt=""></div>
+              <div class="sidebar__title">Помощь</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/note.svg" alt=""></div>
+              <div class="sidebar__title">На модерации</div>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link link" href="">
+              <div class="sidebar__icon"><img src="assets/icons/monic.svg" alt=""></div>
+              <div class="sidebar__title">Управление пользователями</div>
+            </a>
+          </li>
+        </ul>
+
+        <button class="sidebar__btn btn btn_secondary">
+          Выйти
+        </button>
       </aside>
-      <main class="page">
+      <main class="main">
         <section class="top">
           <div class="min-container">
             <div class="top__title">Создание олимпиады</div>
@@ -147,7 +174,7 @@
                 <div class="footer-column__icon"><img src="assets/icons/whatsapp.svg" alt=""></div>
                 <div class="footer-column__icon"><img src="assets/icons/VK.svg" alt=""></div>
               </div>
-              <div class="footer-column__police">Политика конфиденциальности © 2022  Все права защищены.</div>
+              <div class="footer-column__police">Политика конфиденциальности © 2022 Все права защищены.</div>
             </div>
           </div>
           <div class="footer-column">

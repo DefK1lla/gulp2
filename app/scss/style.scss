@@ -4,12 +4,6 @@
 @import "base/_libs";
 @import "base/typography";
 
-@import "layout/base";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sidebar";
-@import "layout/main";
-
 @import "components/input";
 @import "components/button";
 @import "components/link";
@@ -17,3 +11,9 @@
 @import "components/nav";
 @import "components/nots";
 @import "components/user";
+
+@import "layout/base";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/main";
