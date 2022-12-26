@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  &_dropdown {
+    position: relative;
+
+    padding-right: 26px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+
+      width: 16px;
+      height: 8px;
+
+      background: url(../assets/icons/dropdown.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

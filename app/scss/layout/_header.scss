@@ -1,0 +1,18 @@
+.header {
+  padding: 10px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nots {
+    margin-right: 30px;
+  }
+}
