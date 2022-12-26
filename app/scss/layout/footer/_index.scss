@@ -11,7 +11,6 @@
 
     &-column {
 
-
         &__item {
             display: flex;
             padding-top: 37px;
@@ -24,6 +23,8 @@
         &__name {
             font-weight: 700;
             opacity: 0.8;
+
+            margin-bottom: 10px;
         }
 
         &__police {
@@ -38,7 +39,7 @@
 
     &-column__wrapp {
         padding-left: 104px;
-    } 
+    }
 }
 
 
@@ -50,7 +51,8 @@
 
 
 
-.footer-column__index, .footer-column__index, .footer-column__index {
+.footer-column__index,
+.footer-column__index,
+.footer-column__index {
     line-height: 30px;
 }
-
