@@ -13,19 +13,48 @@
     width: 24px;
     height: 16px;
 
+    padding: 0;
+    margin: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 
     background: none;
     border: none;
+    overflow: visible;
   }
 
   &__line {
+    position: absolute;
+
     display: block;
     width: 24px;
     height: 3px;
 
     background: $color-gray;
+    border-radius: $border-radius;
+
+    &::after,
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background: $color-gray;
+      border-radius: $border-radius;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
   }
 }
