@@ -87,7 +87,11 @@
 .items {
     margin-top: 20px;
     max-width: 1365px;
-    min-height: 545px;
+    min-height: 45px;
+
+    &_btn {
+        margin-top: 26px;
+    }
 
     &__flex {
         display: flex;
@@ -150,5 +154,9 @@
             padding-left: 10px;
         }
     }
-
+    .btn_subtitle {
+        font-size: 14px;
+        opacity: 0.8;
+        padding: 10px;
+    }
 }
