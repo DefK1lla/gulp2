@@ -52,3 +52,65 @@
 .items-option-end {
   margin: 10px 0;
 }
+
+.input-file-body {
+  position: relative;
+
+  width: 150px;
+}
+
+.input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  font-size: 0;
+
+  cursor: pointer;
+}
+
+.input-file-name {
+  // display: none;
+
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+
+  &.filled {}
+}
+
+.input-file-text {
+  position: relative;
+
+  padding-left: 24px;
+  margin-right: 30px;
+
+  text-decoration: underline;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 12px;
+    height: 16px;
+
+    background: url(../assets/icons/file.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.input-file-remove {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
