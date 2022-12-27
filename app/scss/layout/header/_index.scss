@@ -1,6 +1,9 @@
 .header {
   padding: 10px 0;
 
+  background: $color-light;
+  box-shadow: $box-shadow;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -19,4 +22,15 @@
   &__nots {
     margin-right: 30px;
   }
+
+  &__logo {
+    margin: 0 15px;
+  }
+
+
+  &__logo-img {
+    width: 30px;
+  }
 }
+
+@import "media";

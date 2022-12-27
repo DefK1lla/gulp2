@@ -1,0 +1,33 @@
+@media (max-width: 1200px) {
+  .burger-menu {
+    position: absolute;
+    top: 300%;
+    left: -200%;
+
+    min-height: 100vh;
+
+    padding: 15px;
+
+    background: $color-light;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.3s linear;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  .nav {
+    position: relative;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+}

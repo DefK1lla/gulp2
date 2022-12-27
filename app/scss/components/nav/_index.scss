@@ -19,11 +19,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 
     background: none;
     border: none;
     overflow: visible;
+    cursor: pointer;
   }
 
   &__line {
@@ -58,3 +58,5 @@
     }
   }
 }
+
+@import "media";

@@ -5,3 +5,11 @@
     }
   }
 }
+
+@media (max-width: 345px) {
+  .user {
+    &__name {
+      display: none;
+    }
+  }
+}

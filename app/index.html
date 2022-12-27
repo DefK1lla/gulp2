@@ -12,41 +12,43 @@
 
 <body>
   <div class="wrapper">
-    <header class="header paper">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo" href="">
-            <img class="logo" src="./assets/logo.png" alt="logo">
+            <img class="header__logo-img logo" src="./assets/logo.png" alt="logo">
           </a>
 
           <div class="header__menu">
             <nav class="nav">
-              <button class="nav__btn">
+              <button class="nav__btn burger-btn">
                 <span class="nav__line"></span>
               </button>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Курсы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Акции</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Рейтинг учеников</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Рейтинг менторов</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Новости</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Помощь</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="">Олимпиады</a>
-                </li>
-              </ul>
+              <div class="burger-menu">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Курсы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Акции</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Рейтинг учеников</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Рейтинг менторов</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Новости</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Помощь</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="">Олимпиады</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
 
@@ -68,7 +70,7 @@
     </header>
     <div class="page">
       <aside class="sidebar">
-        <ul class="sidebar__list">
+        <ul class="sidebar__list to-burger">
           <li class="sidebar__item">
             <a class="sidebar__link link" href="">
               <div><img class="sidebar__icon" src="assets/icons/Account circle.svg" alt=""></div>
@@ -154,11 +156,11 @@
             <div class="top-content paper">
               <div class="top-content__inner">
                 <div class="top-content-item">
-                    <div class="top-content-item__cover"></div>
-                    <div class="top-content-item__congif">
-                      <a class="top-content-item__congig-element" href="">Загрузить обложку</a>
-                      <a class="top-content-item__congig-element" href="">Удалить</a>
-                    </div>
+                  <div class="top-content-item__cover"></div>
+                  <div class="top-content-item__congif">
+                    <a class="top-content-item__congig-element" href="">Загрузить обложку</a>
+                    <a class="top-content-item__congig-element" href="">Удалить</a>
+                  </div>
                 </div>
                 <div class="top-content-item">
                   <div class="top-content-item__inner">
@@ -168,37 +170,57 @@
                     </div>
                     <div class="top-content-item">
                       <div class="top-content-item__items">
-                        <textarea class="top-content-item__input textarea" placeholder="Комментарий к олимпиаде"></textarea>
+                        <textarea class="top-content-item__input textarea"
+                          placeholder="Комментарий к олимпиаде"></textarea>
                         <img src="assets/icons/writing.svg" alt="" class="images">
                       </div>
+                    </div>
+                    <div class="top-content-item flex">
+                      <div class="top-content-item__items">
+                        <input type="submit" value="Видимость в каталоге" class="top-content-item__input input-submit">
+                        <img src="assets/icons/arrow.svg" alt="" class="arrow">
+                      </div>
+                      <div class="top-content-item__items">
+                        <input type="submit" value="Видимость в каталоге" class="top-content-item__input input-submit">
+                        <img src="assets/icons/arrow.svg" alt="" class="arrow">
+                      </div>
+                      <div class="top-content-item__items">
+                        <input type="input" value="0" class="top-content-item__index input-submit">
+                        <img src="assets/icons/₽.svg" alt="" class="images">
+                      </div>
+                    </div>
+                    <div class="top-content-time top-content-item">
+                      <div class="top-content-item__items">
+                        <div class="top-content-item__title">Регистрация на олимпиаду</div>
+                      </div>
+                      <div class="top-content-item__items">
+                        <input type="submit" value="28.11.2022"
+                          class="top-content-item__input input-submit input-width">
+                        <img src="assets/icons/calendar.svg" alt="" class="calendar" width="15">
+                      </div>
+                      <div class="top-content-item__items">
+                        <input type="submit" value="00:00 (Москва)" class="top-content-item__input input-submit">
+                      </div>
+                      <span class="line">-</span>
+                      <div class="top-content-item__items">
+                        <input type="submit" value="28.11.2022"
+                          class="top-content-item__input input-submit input-width">
+                        <img src="assets/icons/calendar.svg" alt="" class="calendar" width="15">
+                      </div>
+                      <div class="top-content-item__items">
+                        <input type="submit" value="00:00 (Москва)" class="top-content-item__input input-submit">
+                      </div>
+                    </div>
+                    <div class="top-content-info">
+                      <div class="top-content-info__subtitle">дата и время начала</div>
+                      <div class="top-content-info__subtitle">дата и время окончания</div>
+                    </div>
                   </div>
-                  <div class="top-content-item flex">
+                  <div class="top-content-items-end top-content-item">
                     <div class="top-content-item__items">
-                      <input type="submit" value="Видимость в каталоге" class="top-content-item__input input-submit">
-                      <img src="assets/icons/arrow.svg" alt="" class="arrow">
+                      <div class="top-content-item__title">Дата завершения олимпиады</div>
                     </div>
-                    <div class="top-content-item__items">
-                      <input type="submit" value="Видимость в каталоге" class="top-content-item__input input-submit">
-                      <img src="assets/icons/arrow.svg" alt="" class="arrow">
-                    </div>
-                    <div class="top-content-item__items">
-                      <input type="input" value="0" class="top-content-item__index input-submit">
-                      <img src="assets/icons/₽.svg" alt="" class="images">
-                    </div>
-                  </div>
-                  <div class="top-content-time top-content-item">
-                    <div class="top-content-item__items">
-                      <div class="top-content-item__title">Регистрация на олимпиаду</div>
-                    </div>
-                    <div class="top-content-item__items">
-                      <input type="submit" value="28.11.2022" class="top-content-item__input input-submit input-width">
-                      <img src="assets/icons/calendar.svg" alt="" class="calendar" width="15">
-                    </div>
-                    <div class="top-content-item__items">
-                      <input type="submit" value="00:00 (Москва)" class="top-content-item__input input-submit">
-                    </div>
-                    <span class="line">-</span>
-                    <div class="top-content-item__items">
+                    <div class="top-content-item__items top-content-items-end__items">
                       <input type="submit" value="28.11.2022" class="top-content-item__input input-submit input-width">
                       <img src="assets/icons/calendar.svg" alt="" class="calendar" width="15">
                     </div>
@@ -207,30 +229,13 @@
                     </div>
                   </div>
                   <div class="top-content-info">
-                    <div class="top-content-info__subtitle">дата и время начала</div>
                     <div class="top-content-info__subtitle">дата и время окончания</div>
                   </div>
                 </div>
-                <div class="top-content-items-end top-content-item">
-                  <div class="top-content-item__items">
-                    <div class="top-content-item__title">Дата завершения олимпиады</div>
-                  </div>
-                  <div class="top-content-item__items top-content-items-end__items">
-                    <input type="submit" value="28.11.2022" class="top-content-item__input input-submit input-width">
-                    <img src="assets/icons/calendar.svg" alt="" class="calendar" width="15">
-                  </div>
-                  <div class="top-content-item__items">
-                    <input type="submit" value="00:00 (Москва)" class="top-content-item__input input-submit">
-                  </div>
-                </div>
-                <div class="top-content-info">
-                  <div class="top-content-info__subtitle">дата и время окончания</div>
-                </div>
+
               </div>
-              
-               </div>
-            
-          </div>
+
+            </div>
         </section>
       </main>
     </div>

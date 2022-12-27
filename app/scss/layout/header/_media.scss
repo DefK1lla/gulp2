@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+  .header {
+    &__menu {
+      order: -1;
+      margin: 0;
+    }
+
+    &__logo-img {
+      width: 26px;
+    }
+  }
+}
+
+@media(min-width: 621px) and (max-width: 1199px) {
+  .header {
+    &__note {
+      order: 2;
+    }
+
+    &__logo {
+      order: 3;
+    }
+
+    &__user {
+      order: 4;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    &__logo-img {
+      width: 16px;
+    }
+  }
+}
