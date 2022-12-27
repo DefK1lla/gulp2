@@ -22,6 +22,10 @@
   .nav {
     position: relative;
 
+    &__btn {
+      display: flex;
+    }
+
     &__list {
       flex-direction: column;
     }
