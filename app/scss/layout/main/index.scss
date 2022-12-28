@@ -159,4 +159,29 @@
         opacity: 0.8;
         padding: 10px;
     }
+
+    .items-reward {
+        display: grid;
+        grid-template-columns: 10% 70% 10%;
+        max-width: 718px;
+        margin: 10px 0;
+
+        &__input {
+            margin-top: 10px;
+        }
+
+    }
+
+
+    .add {
+        max-width: 608px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .items-min-end {
+        display: flex;
+        max-width: 391px;
+        padding-bottom: 15px;
+    }
 }
